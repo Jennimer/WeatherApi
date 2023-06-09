@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image: url(IMG_hanko.jpg);
+    font-family: 'Roboto';
+    
+}
+h1{
+    align-self: start;
+}
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    margin: 30px
+
+}
+h1.temp{
+    margin-left: 0px;
+    margin-bottom: 7px;
+
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather{
+    margin-left: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 3px;
+    height: 29px;
+    width: 29px;
+    background-color:  rgb(221, 217, 217);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    background: rgb(124, 117, 117);
+
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+    background: rgb(221, 217, 217);
+    height: 26px;
+    font-size: 18px;
+    font-family: 'Roboto light';
+    width: 80%;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
