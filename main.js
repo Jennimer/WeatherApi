@@ -1,7 +1,7 @@
 
 
 let weather = {
-    apiKey: "554cf5ea15ffab5f469501b03ffd4a20",
+    apiKey: $WEATHER_API_TOKENJE,
     fetchWeather: function(city){
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" 
